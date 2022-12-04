@@ -1,0 +1,46 @@
+############################################################################################################
+
+export PATH=$PATH:/home/pirate/.local/bin
+export PATH=$PATH:/usr/sbin
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/kotlinc/bin
+alias update='sudo -- sh -c "apt update && apt upgrade"'
+
+# Libcs50 for C
+export LIBRARY_PATH=/usr/local/lib
+export C_INCLUDE_PATH=/usr/local/include
+export LD_LIBRARY_PATH=/usr/local/lib
+
+# GoLang
+export GOPATH=$HOME/go
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+# poweroff
+alias po="sudo shutdown now"
+alias rs="sudo reboot"
+
+# editors
+alias v="vim"
+alias n="nano"
+alias mu="mousepad"
+
+# PS1
+PS1="\[$(tput bold)\]\[\033[38;5;33m\][\w]\[$(tput sgr0)\] \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;178m\]>\[$(tput sgr0)\]\[\033[38;5;202m\]>\[$(tput sgr0)\]\[\033[38;5;160m\]>\[$(tput sgr0)\] \[$(tput sgr0)\]"
+#PS1="\[$(tput bold)\]\[\033[38;5;33m\][\u:\w]\[$(tput sgr0)\] \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;178m\]>\[$(tput sgr0)\]\[\033[38;5;202m\]>\[$(tput sgr0)\]\[\033[38;5;160m\]>\[$(tput sgr0)\] \[$(tput sgr0)\]"
+
+# snap
+alias code="snap run code"
+
+
+
+### /etc/inputrc
+
+##### ADDEDBYME #######
+set colored-stats On
+set completion-ignore-case On
+set completion-prefix-display-length 3
+set mark-symlinked-directories On
+set show-all-if-ambiguous On
+set show-all-if-unmodified On
+set visible-stats On
