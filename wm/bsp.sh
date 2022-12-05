@@ -33,6 +33,8 @@ sudo apt install -y cups
 
 sudo apt install -y bluez blueman simple-scan
 
+sudo apt install -y cmake lua-posix libpcre3-dev libmagic-dev luajit libluajit-5.1-dev libreadline-dev zlib1g-dev libunistring-dev libev-dev gcc g++ pkg-config libavformat-dev libswscale-dev libavcodec-dev libdeflate-dev
+
 sudo apt install -y bspwm dmenu sxhkd numlockx rofi dunst libnotify-bin unzip geany scrot
 
 sudo systemctl enable bluetooth
