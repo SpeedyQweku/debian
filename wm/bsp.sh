@@ -1,16 +1,18 @@
 #!/bin/bash
 
-sudo apt install -y xorg xutils xinit
+sudo apt install -y xorg xutils xinit 
 
 sudo apt install -y polybar dunst picom rofi
 
 sudo apt install -y build-essential
 
-sudo apt install -y kitty nautilus
+sudo apt install -y kitty thunar
 
 sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa
 
-sudo apt install -y lxappearance nitrogen slick-greeter lightdm lightdm-settings
+sudo apt install -y lxappearance feh
+
+# sudo apt install -y slick-greeter lightdm lightdm-settings
 
 sudo apt install -y firefox-esr 
 
@@ -19,7 +21,9 @@ sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backen
 sudo systemctl enable avahi-daemon
 sudo systemctl enable acpid
 
-sudo apt install -y exa
+sudo apt install -y exa lfm
+
+sudo apt install -y micro
 
 sudo apt install -y libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libxcb-glx0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl-dev libegl-dev libpcre2-dev libevdev-dev uthash-dev libev-dev libx11-xcb-dev meson
 
