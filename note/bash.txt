@@ -1,12 +1,15 @@
-############################################################################################################
-
 export PATH=$PATH:/home/pirate/.local/bin
 export PATH=$PATH:/usr/sbin
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/usr/local/kotlinc/bin
+export PATH=$PATH:/usr/local/john/run
+export PATH=$PATH:/usr/local/cmake/bin
+export PATH=$PATH:/usr/local/flutter/bin
+export PATH=$PATH:/usr/local/zig
+
 alias update='sudo -- sh -c "apt update && apt upgrade"'
 
-# Libcs50 for C
+# Libcs50 & Boost_1_81_0
 export LIBRARY_PATH=/usr/local/lib
 export C_INCLUDE_PATH=/usr/local/include
 export LD_LIBRARY_PATH=/usr/local/lib
@@ -21,26 +24,29 @@ alias po="sudo shutdown now"
 alias rs="sudo reboot"
 
 # editors
-alias v="vim"
+alias v="nvim"
 alias n="nano"
-alias mu="mousepad"
+alias th="touch"
 
-# PS1
-PS1="\[$(tput bold)\]\[\033[38;5;33m\][\w]\[$(tput sgr0)\] \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;178m\]>\[$(tput sgr0)\]\[\033[38;5;202m\]>\[$(tput sgr0)\]\[\033[38;5;160m\]>\[$(tput sgr0)\] \[$(tput sgr0)\]"
-#PS1="\[$(tput bold)\]\[\033[38;5;33m\][\u:\w]\[$(tput sgr0)\] \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;178m\]>\[$(tput sgr0)\]\[\033[38;5;202m\]>\[$(tput sgr0)\]\[\033[38;5;160m\]>\[$(tput sgr0)\] \[$(tput sgr0)\]"
+# Nordvpn
+alias vpn="nordvpn c us"
+alias vpnd="nordvpn d"
+alias vpns="nordvpn status"
 
-# snap
-alias code="snap run code"
+#Tools
+alias bettercap="sudo docker run -it --privileged --net=host bettercap/bettercap"
+alias ci="ping -c 5 google.com"
+alias rf="source .bashrc"
+alias c="clear"
 
 
 
-### /etc/inputrc
+### PS1 ###
 
-##### ADDEDBYME #######
-set colored-stats On
-set completion-ignore-case On
-set completion-prefix-display-length 3
-set mark-symlinked-directories On
-set show-all-if-ambiguous On
-set show-all-if-unmodified On
-set visible-stats On
+# PS1="\[$(tput bold)\]\[\033[38;5;33m\][\w]\[$(tput sgr0)\] \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;178m\]>\[$(tput sgr0)\]\[\033[38;5;202m\]>\[$(tput sgr0)\]\[\033[38;5;160m\]>\[$(tput sgr0)\] \[$(tput sgr0)\]"
+
+# PS1="\[$(tput bold)\]\[\033[38;5;33m\][\u:\w]\[$(tput sgr0)\] \[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;178m\]>\[$(tput sgr0)\]\[\033[38;5;202m\]>\[$(tput sgr0)\]\[\033[38;5;160m\]>\[$(tput sgr0)\] \[$(tput sgr0)\]"
+
+# PS1="[\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;160m\]\W\[$(tput sgr0)\]]\\$ \[$(tput sgr0)\]"
+
+PS1="[\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;160m\]\W\[$(tput sgr0)\]]\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;13m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[$(tput sgr0)\]\\$ \[$(tput sgr0)\]"
