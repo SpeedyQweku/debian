@@ -1,0 +1,53 @@
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/tools/binfiles
+export PATH=$PATH:$HOME/tools/bins
+export PATH=$PATH:$HOME/Documents/code/EHT
+
+### GoLang ####
+#export GOPATH=$HOME/go/
+#export GOROOT=/usr/local/go
+#export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+# poweroff
+alias po="shutdown now"
+alias rs="reboot"
+
+# editors
+setnvim ()
+{
+    alias v="nvim"
+    alias sv="sudo nvim"
+    alias dnvim="cd $HOME/.config/nvim"
+    alias vzsh="nvim $HOME/.zshrc"
+}
+[ -f /bin/zsh  ] && setnvim
+
+alias n="nano"
+alias th="touch"
+
+# Nordvpn
+alias vpn="nordvpn c us"
+alias vpnd="nordvpn d"
+alias vpns="nordvpn status"
+alias getip="curl ifconfig.me"
+
+# Tools
+alias ci="ping -c 5 8.8.8.8"
+alias cl="clear"
+alias open='xdg-open'
+alias e="exit"
+alias PwnTillDawn="sudo openvpn $HOME/Documents/CTF/PwnTillDawn.ovpn"
+alias ls='exa --icons'
+alias grep='grep --color=auto'
+alias cutter="$HOME/tools/Cutter-v2.2.1-Linux-x86_64.AppImage &disown"
+
+# Pacman
+alias pacupdate="sudo pacman -Syu"
+alias pacinstall="sudo pacman -S"
+alias pacupgrade="sudo pacman -Syyu"
+alias power="sudo powerpill -Syu"
+
+alias rzsh="source $HOME/.zshrc"
+alias hm="$HOME/Documents/hellMODE"
+alias ctf="$HOME/Documents/hellMODE/CTF"
+alias pip-install="pip install --break-system-packages"
