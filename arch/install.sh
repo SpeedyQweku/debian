@@ -18,7 +18,7 @@ sudo pacman -Syu visual-studio-code-bin burpsuite vmware-workstation nordvpn-bin
     gdb tmux assetfinder  amass httprobe  \
     httprobe  dnsvalidator subfinder netdiscover  sublist3r \
     openssh ffuf cmatrix neofetch linux-lts linux-lts-headers \
-    hashcat ruby john masscan fatresize \
+    hashcat ruby john masscan fatresize go \
     lib32-e2fsprogs dosfstools gotop sslstrip \
     driftnet  sslstrip dsniff  dirbuster  \
     ffuf  gobuster  diffutils  ranger  screenfetch  \
@@ -26,8 +26,8 @@ sudo pacman -Syu visual-studio-code-bin burpsuite vmware-workstation nordvpn-bin
     sublime-text-4  ffuf  pwncat-caleb  mpv  \
     conky svn jq powerpill arduino fortune-mod  \
     findomain  tlsx favfreak  httpx \
-    notesnook-bin microsoft-edge-stable-bin paru  \
+    notesnook-bin microsoft-edge-stable-bin paru yay \
     teamviewer seclists \
     filezilla openbsd-netcat  traceroute  bind  pwncat  chromium  \
-    wifite  wifiphisher   wifiphisher  fzf  tldr \
+    wifite  wifiphisher fzf  tldr \
     python-pipx  yt-dlp  gcc-fortran  dnsx gau  signal-desktop  dalfox  gf
